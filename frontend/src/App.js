@@ -10,13 +10,25 @@ import OtherResources from './Pages/OtherResources';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
 
+const theme = createTheme({
 
+})
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Awareness" element={<Awareness />} />
+          <Route exact path="/Shelters" element={<Shelters />} />
+          <Route exact path="/FoodBanks" element={<FoodBanks />} />
+          <Route exact path="/OtherResources" element={<OtherResources />} />
+          <Route exact path="/Signup" element={<Signup />} />
+          <Route exact path="/Login" element={<Login />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
