@@ -10,12 +10,14 @@ import OtherResources from './Pages/OtherResources';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
 
+import { Typography } from '@material-ui/core';
+
 
 
 function App() {
   return (
     <div className="App">
-      
+      <Home />
     </div>
   );
 }
