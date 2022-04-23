@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { TextField, Button, InputAdornment, Typography, makeStyles, Box, Grid } from "@material-ui/core";
-//import AccountBoxRoundedIcon from '@material-ui/icons/AccountBoxRounded'
-//import { VpnKeyRounded } from '@material-ui/icons';
-//import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
+import AccountBoxRoundedIcon from '@material-ui/icons/AccountBoxRounded'
+import { VpnKeyRounded } from '@material-ui/icons';
+import ArrowRightRoundedIcon from '@material-ui/icons/ArrowRightRounded';
 
 const useStyles = makeStyles({
     text: {
@@ -107,7 +107,7 @@ export default function Login() {
                         InputProps={{
                             startAdornment: (
                                 <InputAdornment position="start">
-                                    {/* <AccountBoxRoundedIcon /> */}
+                                    <AccountBoxRoundedIcon />
                                 </InputAdornment>
                             ),
                             style: {
@@ -135,7 +135,7 @@ export default function Login() {
                         InputProps={{
                             startAdornment: (
                                 <InputAdornment position="start">
-                                    {/* <VpnKeyRounded /> */}
+                                    <VpnKeyRounded />
                                 </InputAdornment>
                             ),
                             style: {
@@ -159,7 +159,7 @@ export default function Login() {
                             className={classes.button}
                             variant="contained"
                             type="submit"
-                            // endIcon={<ArrowRightRoundedIcon fontSize='large' />}
+                            endIcon={<ArrowRightRoundedIcon fontSize='large' />}
                             style={{ fontSize: 18, maxHeight: 30 }}
                         >
                             Login
@@ -171,7 +171,7 @@ export default function Login() {
                             id="signup"
                             className={classes.button}
                             variant="contained"
-                            // endIcon={<ArrowRightRoundedIcon fontSize='large' />}
+                            endIcon={<ArrowRightRoundedIcon fontSize='large' />}
                             style={{ fontSize: 18, maxHeight: 30 }}
                             onClick={() => navigate('/Signup')}
                         >
